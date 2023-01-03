@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <body>
+		<style>
+			body{
+				background-color: black;
+			}
+			div{
+				height: 200px;
+				width: 200px;
+				background-color: red;
+				position: relative;
+				animation-name: relocate;
+				animation-duration: 5s;
+				animation-iteration-count: infinite;
+			}
+
+			@keyframes relocate {
+				0% {top:0px; background-color: red;}
+				25% {top: 200px; left: 0px; background-color: blue;}
+				50% {top: 200px; left: 200px; background-color: aliceblue;}
+				75% {top: 0px; left: 200px; background-color: green;}
+				100%{top: 0px; left: 0px; background-color: red;}
+			} 
+
+		</style>
+
+		<div></div>
+
+
+    </body>
+</html>

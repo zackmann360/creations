@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <style>
+
+            .container{
+                position: absolute;
+                max-width: 300px;
+                min-height: 100px;
+                background-color: black       ;
+                overflow: hidden;
+            }
+
+            .text{
+                font-size: 6em;
+                display: block;
+                background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+	            -webkit-background-clip: text;
+	            background-clip: text;
+                padding: .25em .25em .25em .25em;
+                -webkit-text-fill-color: transparent;
+	            -webkit-animation: aitf 80s linear infinite;
+                animation-name: example;
+                
+                
+            }
+
+            .inner{
+                height: 100px;
+                width: 50px;
+                background-color: green;
+                position: relative;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-name: example;
+            }
+
+            
+
+            @keyframes example{
+                0% {background-position: 0% 50%;}
+                100% {background-position: 100% 50%;}
+            }
+            
+        </style>
+            <div class="container">
+                <div class="text">TEST
+                </div>
+            </div>
+        
+
+
+    </body>
+</html>

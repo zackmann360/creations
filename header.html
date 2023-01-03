@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    </head>
+    <style>
+        html body {
+            background: #555;
+            margin: 0;
+            padding: 0;
+        }
+
+        .upper {
+            background-color: rgb(206, 206, 206);
+            font-size: 50px;
+            font-family: 'Alfa Slab One', cursive;
+            padding: 20px 0px 20px 0px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            color: #444;
+        }
+
+        .banner {
+            background-color: rgb(196, 194, 194);
+            padding: 10px 20px 10px 30px;
+            border-radius: 10px;
+            box-shadow: 2px 3px 7px rgb(115 114 114), -6px -8px 10px #fff;
+            border-top: 1px solid #cdcccc;
+            border-left: 1px solid #cdcccc;
+            border-bottom: 1px solid #b6b6b6;
+            border-right: 1px solid #b6b6b6;
+        }
+
+        .lower {
+            background-color: #b3b3b3;
+            padding: 10px 20px;
+
+        }
+
+        .lower button {
+            padding: 8px 20px;
+            background-color: #cdcccc;
+            border-radius: 3px;
+            box-shadow: 2px 2px 3px rgb(115 114 114), -2px -2px 4px #fff;
+            border: 1px solid #c8c8c8;
+            /* border-top: 1px solid #cdcccc;
+            border-left: 1px solid #cdcccc;
+            border-bottom: 1px solid #b6b6b6;
+            border-right: 1px solid #b6b6b6; */
+        }
+
+        .activated{
+            background-color: red;
+        }
+
+        
+    </style>
+
+    <div class="mainContainer">
+        <div class="upper">
+            <div class="banner">MY CREATIONS</div>
+
+        </div>
+        <div class="lower">
+            <button class="activated">Week1</button>
+        </div>
+    </div>
+
+    <script>
+        var button = document.querySelector('button')
+        button.onclick = activate
+
+        function activate(){
+            console.log('cats')
+        }
+    </script>
+</body>
+
+</html>
